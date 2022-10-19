@@ -15,8 +15,6 @@ contract AirDrop {
     mapping(address => bool) private rewardIsClaimed;
 
     // _______________ Events _______________
-    /// @dev Emitted when `greeting` is set as the greeting
-    event SetGreeting(string greeting);
 
     // _______________ Constructor _______________
     /**
