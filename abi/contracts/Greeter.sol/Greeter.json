@@ -1,0 +1,7 @@
+[
+  "constructor(string)",
+  "event SetGreeting(string)",
+  "function consoleGreet() view",
+  "function greet() view returns (string)",
+  "function setGreeting(string)"
+]
