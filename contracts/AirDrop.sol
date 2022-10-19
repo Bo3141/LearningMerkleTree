@@ -37,7 +37,7 @@ contract AirDrop {
 
     function claim(bytes32[] memory _proof) public {
         bytes32 leaf = keccak256(abi.encodePacked(msg.sender));
-        require(MerkleProof.verify(_proof, root, leaf) == true, "proof is shit");
+        require(MerkleProof.verify(_proof, root, leaf) == true, "Invalid proof");
         require(rewardIsClaimed[msg.sender] == false, "Airdrop is already claimed");
         rewardIsClaimed[msg.sender] = true;
         token.transfer(msg.sender, rewardAmount);
